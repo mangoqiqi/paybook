@@ -1,0 +1,727 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>网上账单管家</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!--选择框-->
+ <style type="text/css">
+            /*SELECT W/DOWN-ARROW*/
+            select.selectPointOfInterest
+            {
+               width                    : 200px;
+               height                   : 60px;
+               line-height              : 60px;
+               text-indent              : 10px;
+               text-align               : left;
+               vertical-align           : middle;
+               border                   : 1px solid #94c1e7;
+               -moz-border-radius       : 6px;
+               -webkit-border-radius    : 6px;
+               border-radius            : 6px;
+               -webkit-appearance       : none;
+               -moz-appearance          : none;
+               appearance               : none;
+               font-family              : SimHei;
+               font-size                : 18pt;
+               font-weight              : 500;
+               color                    : RGBA(102,102,102,0.7);
+               cursor                   : pointer;
+               outline                  : none;
+            }
+
+            /*LABEL FOR SELECT*/
+            label.lblSelect{ position: relative; display: inline-block;}
+            /*DOWNWARD ARROW (25bc)*/
+            label.lblSelect::after
+            {
+                content                 : "\25bc";
+                position                : absolute;
+                top                     : 0;
+                right                   : 0;
+                bottom                  : 0;
+                width                   : 20pt;
+                line-height             : 40pt;
+                vertical-align          : middle;
+                text-align              : center;
+                background              : #94c1e7;
+                color                   : #2984ce;
+               -moz-border-radius       : 0 6px 6px 0;
+               -webkit-border-radius    : 0 6px 6px 0;
+                border-radius           : 0 6px 6px 0;
+                pointer-events          : none;
+            }
+        </style>
+<script type="application/x-javascript"> 
+	addEventListener("load", function(){setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<!--总览-->
+	
+<!--ADS-->
+<link rel="stylesheet" href="AD/css/ADpage.css" media="screen" type="text/css" />   
+<!--日历总览-->
+		<link rel="stylesheet" type="text/css" href="input/component.css">
+		<script type="text/javascript" src="input/classie.js"></script>
+	  <link rel="stylesheet" href="calendar/css/calendar.css">
+      <script src="calendar/js/jquery.min.js"></script>
+ 	  <script src="calendar/js/calendar.js"></script>
+   
+
+    <link rel="stylesheet" href="plan/css/plan_style.css" media="screen" type="text/css" />   
+<!--cookieall-->
+		 <!--消费饼状图-->
+           <style type="text/css">
+            /*SELECT W/DOWN-ARROW*/
+            select.selectPointOfInterest
+            {
+               width                    : 200px;
+               height                   : 60px;
+               line-height              : 60px;
+               text-indent              : 10px;
+               text-align               : left;
+               vertical-align           : middle;
+               border                   : 1px solid #94c1e7;
+               -moz-border-radius       : 6px;
+               -webkit-border-radius    : 6px;
+               border-radius            : 6px;
+               -webkit-appearance       : none;
+               -moz-appearance          : none;
+               appearance               : none;
+               font-family              : SimHei;
+               font-size                : 18pt;
+               font-weight              : 500;
+               color                    : RGBA(102,102,102,0.7);
+               cursor                   : pointer;
+               outline                  : none;
+            }
+
+            /*LABEL FOR SELECT*/
+            label.lblSelect{ position: relative; display: inline-block;}
+            /*DOWNWARD ARROW (25bc)*/
+            label.lblSelect::after
+            {
+                content                 : "\25bc";
+                position                : absolute;
+                top                     : 0;
+                right                   : 0;
+                bottom                  : 0;
+                width                   : 20pt;
+                line-height             : 40pt;
+                vertical-align          : middle;
+                text-align              : center;
+                background              : #94c1e7;
+                color                   : #2984ce;
+               -moz-border-radius       : 0 6px 6px 0;
+               -webkit-border-radius    : 0 6px 6px 0;
+                border-radius           : 0 6px 6px 0;
+                pointer-events          : none;
+            }
+        </style>
+            <!-- 圆饼图 echarts.js -->
+    <script src="cookie/js/echartsOne.js"></script>
+<!--line-->
+	  <script type="text/javascript" src="line/echarts.min.js"></script>
+	  <script type="text/javascript" src="line/line_index.js"></script>
+<!--button-->
+<link  id="IOSbutton" href="IOSbutton.css" rel="stylesheet"> 
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/morris.css" type="text/css"/>
+<!-- Graph CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+<!-- jQuery -->
+<!-- //jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/>
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+
+</head> 
+
+<body>
+	
+
+   <div class="page-container">
+   		<div class="left-content">
+	  		 <div class="mother-grid-inner">
+            		<!--header start here-->
+					<div class="header-main">
+                		 <div class="profile_details w3l" style="background-color:#FFF">
+							  <img src="images/未标题-1.png" >
+                         </div>
+					<div class="profile_details w3l" style="float:right">		
+						<ul>
+							<li class="dropdown profile_details_drop">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="profile_img">	
+                                <span id="prfil-img" class="prfil-img"><img  id="head_img" src="" alt=""></span> 
+                                <div  id="user-name" class="user-name">
+                                     <p>ID:12335</p>
+                                     <span>阿张</span>
+                                </div>
+                                            <i class="fa fa-angle-down"></i>
+                                            <i class="fa fa-angle-up"></i>
+                                            <div class="clearfix"></div>	
+                                        </div>	
+									</a>
+									<ul class="dropdown-menu drp-mnu">
+										<li> <a href="#"><i class="fa fa-cog"></i>设置</a> </li> 
+										<li> <a href="#"><i class="fa fa-user"></i></a>我的信息</li> 
+										<li> <a href="#"><i class="fa fa-sign-out"></i>退出</a></li>
+									</ul>
+									</li>
+								</ul>
+							</div>
+				     <div class="clearfix"> </div>	
+				</div>
+<!--heder end here-->
+		<ol  id="souye" class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">首页</a> <i class="fa fa-angle-right"></i></li>
+        </ol>
+<!--four-grids here-->
+		<div id="ADpage" style="box-shadow: 0 4px 4px #CCC; width:auto; height:400px; background-color:#FFF">
+        	<div class="ADbox">
+				<div class="list">
+                    <ul>
+                        <li class="p6"><a href="#"><img src="AD/img/1.png" alt=""></a></li>
+                        <li class="p5"><a href="#"><img src="AD/img/2.png" alt=""></a></li>
+                        <li class="p4"><a href="#"><img src="AD/img/3.png" alt=""></a></li>
+                        <li class="p3"><a href="#"><img src="AD/img/44.jpg" alt=""></a></li>
+                        <li class="p2"><a href="#"><img src="AD/img/55.jpg" alt=""></a></li>
+                        <li class="p1"><a href="#"><img src="AD/img/66.jpg" alt=""></a></li>
+                        <li class="p7"><a href="#"><img src="AD/img/77.jpg" alt=""></a></li>
+          		  </ul>
+				</div>
+                <div class="buttons">
+                    <a href="javascript:;"><span class=""></span></a>
+                    <a href="javascript:;"><span class="blue"></span></a>
+                    <a href="javascript:;"><span class=""></span></a>
+                    <a href="javascript:;"><span class=""></span></a>
+                    <a href="javascript:;"><span class=""></span></a>
+                    <a href="javascript:;"><span class=""></span></a>
+                    <a href="javascript:;"><span class=""></span></a>
+                </div>
+                <script type="text/javascript">
+					var $a=$(".buttons a");
+					var $s=$(".buttons span");
+					var cArr=["p7","p6","p5","p4","p3","p2","p1"];
+					var index=0;
+					$(".ADbox .next").click(
+						function(){
+						nextimg();
+						}
+					)
+					$(".ADbox .prev").click(
+						function(){
+						previmg();
+						}
+					)
+					//上一张
+					function previmg(){
+						cArr.unshift(cArr[6]);
+						cArr.pop();
+						//i是元素的索引，从0开始
+						//e为当前处理的元素
+						//each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
+						$(".ADbox li").each(function(i,e){
+							$(e).removeClass().addClass(cArr[i]);
+						})
+						index--;
+						if (index<0) {
+							index=6;
+						}
+						show();
+					}
+					
+					//下一张
+					function nextimg(){
+						cArr.push(cArr[0]);
+						cArr.shift();
+						$(".ADbox li").each(function(i,e){
+							$(e).removeClass().addClass(cArr[i]);
+						})
+						index++;
+						if (index>6) {
+							index=0;
+						}
+						show();
+					}
+					
+					//通过底下按钮点击切换
+					$a.each(function(){
+						$(this).click(function(){
+							var myindex=$(this).index();
+							var b=myindex-index;
+							if(b==0){
+								return;
+							}
+							else if(b>0) {
+								/*
+								 * splice(0,b)的意思是从索引0开始,取出数量为b的数组
+								 * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
+								 * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
+								 * 这时候原本的数组也将这部分数组进行移除了
+								 * 再把移除的数组添加的原本的数组的后面
+								 */
+								var newarr=cArr.splice(0,b);
+								cArr=$.merge(cArr,newarr);
+								$(".ADbox li").each(function(i,e){
+								$(e).removeClass().addClass(cArr[i]);
+								})
+								index=myindex;
+								show();
+							}
+							else if(b<0){
+								/*
+								 * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
+								 * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
+								 * 也就是从原本的照片到需要点击的照片的数组
+								 * 然后将原本的数组跟取出的数组进行拼接
+								 * 再次倒序,使原本的倒序变为正序
+								 */
+								cArr.reverse();
+								var oldarr=cArr.splice(0,-b)
+								cArr=$.merge(cArr,oldarr);
+								cArr.reverse();
+								$(".ADbox  li").each(function(i,e){
+								$(e).removeClass().addClass(cArr[i]);
+								})
+								index=myindex;
+								show();
+							}
+						})
+					})
+					
+					//改变底下按钮的背景色
+					function show(){
+							$($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
+					}
+					
+					//点击class为p2的元素触发上一张照片的函数
+					$(document).on(".ADbox  click",".p2",function(){
+						previmg();
+						return false;//返回一个false值，让a标签不跳转
+					});
+					
+					//点击class为p4的元素触发下一张照片的函数
+					$(document).on(".ADbox  click",".p4",function(){
+						nextimg();
+						return false;
+					});
+					
+					//			鼠标移入box时清除定时器
+					$(".ADbox").mouseover(function(){
+						clearInterval(timer);
+					})
+					
+					//			鼠标移出box时开始定时器
+					$(".ADbox").mouseleave(function(){
+						timer=setInterval(nextimg,4000);
+					})
+					
+					//			进入页面自动开始定时器
+					timer=setInterval(nextimg,4000);
+					</script>
+
+			</div>
+        </div><!-------------------------------------------------------------------------ADpage--------->
+		<div id="page1" style="box-shadow: 0 4px 4px #CCC; width:auto; height:400px; background-color:#FFF; margin-top:20px">
+        	<div>
+                  <div  class="add_xiaofei" style="width:1000px; height:200px; margin:auto">
+        			
+						<script>
+						$('#my-menu').fancyspinbox();
+						</script>
+           				 <div class="input_container" style=" width:400px;height:200px;float:left; margin-left:0px">
+           				 <!--/kuro-container -->
+                               <span class="input input--kuro" style="float:left">
+                              		<input class="input__field input__field--kuro" style="font-style:#" id="input_get" type="text">
+                               		<label class="input__label input__label--kuro" for="input_get">
+                               				<span class="input__label-content input__label-content--kuro" style="color:#0C6">收入金额
+                                            </span>
+                               		</label>
+                                </span>
+						</div><!-- /kuro-container -->
+                        <div class="input_container" style="width:400px;height:320px;float:right; margin-left:0px;margin-bottom:0px;">
+           				 <!-- 	/kuro-container -->
+                            <span class="input input--kuro" style="float:left">
+                              	<input class="input__field input__field--kuro"  style=" color:#F00" id="input_out" type="text">
+                               	<label class="input__label input__label--kuro" for="input_out">
+                               		<span class="input__label-content input__label-content--kuro" style="color:#F00">消费金额</span>
+                               	</label>
+                            </span> 
+                           
+                             
+                                   <label class="lblSelect">
+                                        <select class="selectPointOfInterest" id="add_put" title="Select points of interest nearby">
+                                          <option value="转账">转账</option>
+                                          <option value="餐饮">餐饮</option>
+                                          <option value="生活用品">生活用品</option>
+                                          <option value="交通">交通</option>
+                                          <option value="生活缴费">生活缴费</option>
+                                          <option value="娱乐消费" selected>娱乐消费</option>  
+                                          <option value="学习教育">学习教育</option>
+                                          <option value="其他" selected>其他</option>
+                                        </select>
+                                    </label>
+                                     </select>
+                               
+						</div><!-- /kuro-container -->
+              		</div>
+					<button  id="head_button" class="_button">提交</button>
+        		</div>	<!----add_xiaofei--->
+        </div><!-------------------------------------------------------------------------page1--------->
+		<ol class="breadcrumb">
+                <li class="breadcrumb-item"><a  id="xffx" href="index.html">消费分析</a> <i class="fa fa-angle-right"></i></li>
+        </ol>
+        <div id="page2" style="box-shadow: 0 4px 4px #CCC; width:auto; height:auto; background-color:#FFF; margin-top:20px">
+           	<!--日历总览-->
+  	        <div id="calendar" class="calendar" style="float:left"></div>
+        	<!--活动-->
+        	<div class="col-sm-4 w3-agile-crd" style="float:right;">
+                            <div class="card">
+                                <div class="card-body card-padding">
+                                    <div class="widget">
+                                        <header class="widget-header">
+                                            <h4 class="widget-title">今日活动</h4>
+                                        </header>
+                                        <hr class="widget-separator">
+                                        <div class="widget-body">
+                                            <div class="streamline">
+                                               
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					<div class="clearfix"></div>
+         	<!--日历总览-->
+            <div id="calendar" class="calendar" style="float:left"></div>
+            <!--计划消费-->
+            
+                <div class="charts--container">
+                  <ul>
+                    <li class="chart">
+                      <h3 class="chart--subHeadline">消费计划</h3>
+                      <div id="pieChart">
+                        <svg id="pieChartSVG">
+                          <defs>
+                            <filter id='pieChartInsetShadow'>
+                              <feOffset dx='0' dy='0'/>
+                              <feGaussianBlur stdDeviation='3' result='offset-blur' />
+                              <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+                              <feFlood flood-color= none flood-opacity='1' result='color' />
+                              <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+                              <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+                            </filter>
+                            <filter id="pieChartDropShadow">
+                              <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                              <feOffset in="blur" dx="0" dy="3" result="offsetBlur" />
+                              <feMerge>
+                              <feMergeNode />
+                                <feMergeNode in="SourceGraphic" />
+                              </feMerge>
+                            </filter>
+                          </defs>
+                        </svg>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <script src="plan/js/d3.v3.min.js"></script>
+   				<script src="plan/js/plan_index.js"></script>	
+           <!--消费饼状图_日期选择-->
+           <div style="margin-left:20px; margin-top:50px">
+              <label class="lblSelect">
+                <select  id="SelectYear1" class="selectPointOfInterest">
+                </select>
+            </label>
+            
+            <label class="lblSelect">
+                <select id="SelectMonth1" class="selectPointOfInterest"> 
+                </select>
+            </label>
+            
+            <label class="lblSelect">
+                <select  id="SelectDay1" class="selectPointOfInterest" >
+                </select>
+                
+            </label>
+            
+             <label class="lblSelect" style=" margin-left:375px">
+                <select id="SelectPlat1" class="selectPointOfInterest">
+                    <option value="alipay">支付宝</option>
+                    <option value="wechat">微信支付</option>
+                    <option value="byhand">手账</option>
+                </select>
+            </label>
+       </div>
+       
+           <!--消费饼状图-->
+           <h3 id="gxf">
+    </h3>
+	
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+	  	$(function(){
+	  		//在这就行
+			qxfl('#qxfl');
+		  	$("#gxf button").click(function(){
+		   		qxfl(this);
+		  	})
+	  	});
+    </script>
+        <!--line-->
+           <!--消费饼状图_日期选择-->
+           <div style="margin-left:20px; margin-top:50px">
+             <label class="lblSelect">
+                <select  id="SelectYear2" class="selectPointOfInterest" >
+                </select>
+            </label>
+            
+            <label class="lblSelect">
+                <select id="SelectMonth2" class="selectPointOfInterest" >
+                </select>
+            </label>
+            
+            <label class="lblSelect">
+                <select  id="SelectDay2" class="selectPointOfInterest" >
+                </select>
+     
+            </label>
+            
+             <label class="lblSelect" style=" margin-left:375px">
+                <select id="SelectPlat2" class="selectPointOfInterest">
+                    <option value="alipay">支付宝</option>
+                    <option value="wechat">微信支付</option>
+                    <option value="byhand">手账</option>
+                </select>
+            </label>
+            <div id="line_1" style="width:822px;height:492px;"></div>
+			  <script type="text/javascript" src="line/echarts.min.js"></script>
+              <script type="text/javascript" src="line/line_index.js"></script>
+       </div>
+        
+        </div><!------------page1-->
+        <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a  id="jhsd" href="index.html">计划设定</a> <i class="fa fa-angle-right"></i></li>
+        </ol>
+        
+        <div id="page3" style="box-shadow: 0 4px 4px #CCC; width:auto; height:1000px; background-color:#FFF; margin-top:20px">
+        		
+             <input class="uiswitch" id="uiswitch" type="checkbox" style="margin-left:20px; margin-top:30px">
+               
+                <div class="input_container" style=" background-color:#FFF;width:auto">
+				<h2 style="font-size:50px; font-family:Frutiger">My Plan</h2>
+                
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-1" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-1">
+						<span class="input__label-content input__label-content--hoshi">转账</span>
+					</label>
+				</span>
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-2" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-2">
+						<span class="input__label-content input__label-content--hoshi">餐饮</span>
+					</label>
+				</span>
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-3" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-3">
+						<span class="input__label-content input__label-content--hoshi">生活用品</span>
+					</label>
+				</span>
+                				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-4" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-4" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">交通</span>
+					</label>
+				</span>
+                				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-5" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-5" for="input-5">
+						<span class="input__label-content input__label-content--hoshi">生活缴费</span>
+					</label>
+				</span>
+                				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-6" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-6" for="input-6">
+						<span class="input__label-content input__label-content--hoshi">娱乐消费</span>
+					</label>
+				</span>
+                		<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-7" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-7" for="input-7">
+						<span class="input__label-content input__label-content--hoshi">学习教育</span>
+					</label>
+				</span>
+                		<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="input-8" type="text">
+					<label class="input__label input__label--hoshi input__label--hoshi-color-8" for="input-8">
+						<span class="input__label-content input__label-content--hoshi">其他</span>
+					</label>
+				</span>
+                <script type="text/javascript">
+                        (function() {
+                            // trim polyfill : 		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+                            if (!String.prototype.trim) {
+                                (function() {
+                                    // Make sure we trim BOM and NBSP
+                                    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                                    String.prototype.trim = function() {
+                                        return this.replace(rtrim, '');
+                                    };
+                                })();
+                            }
+            
+                            [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+                                // in case the input is already filled..
+                                if( inputEl.value.trim() !== '' ) {
+                                    classie.add( inputEl.parentNode, 'input--filled' );
+                                }
+            
+                                // events:
+                                inputEl.addEventListener( 'focus', onInputFocus );
+                                inputEl.addEventListener( 'blur', onInputBlur );
+                            } );
+            
+                            function onInputFocus( ev ) {
+                                classie.add( ev.target.parentNode, 'input--filled' );
+                            }
+            
+                            function onInputBlur( ev ) {
+                                if( ev.target.value.trim() === '' ) {
+                                    classie.remove( ev.target.parentNode, 'input--filled' );
+                                }
+                            }
+                        })();
+               		 </script>
+         </div>
+        </div><!--page3--><!-- script-for sticky-nav -->
+        
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-main").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-main").addClass("fixed");
+				}else{
+					$(".header-main").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+<!--inner block start here-->
+<div class="inner-block">
+
+</div>
+<!--inner block end here-->
+<!--copy rights start here-->
+<div class="copyrights" style="margin-top:20px">
+	 <p>Copyright © PayBook|闽ICP备17028714号【我的PayBook】|Powered by Boy Next Door</p>
+</div>	
+<!--COPY rights end here--> 
+</div>
+</div>
+  <!--//content-inner-->
+			<!--/菜单栏-->
+				<div class="sidebar-menu">
+					<header class="logo1">
+						<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> 
+					</header>
+						<div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
+                           <div class="menu">
+									<ul id="menu" >
+							    <li style="cursor:pointer"><a id="souye_sider"><i class="fa fa-tachometer"></i> <span>首页</span><div class="clearfix"></div></a></li>
+										 <li id="menu-academico" style="cursor:pointer"><a id="xffx_sider" ><i class="fa fa-envelope nav_icon"></i><span>消费分析</span><div class="clearfix"></div></a></li>
+									<!-- <li><a href="gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i><span>Gallery</span><div class="clearfix"></div></a></li> 
+									     <li id="menu-academico" ><a href="charts.html"><i class="fa fa-bar-chart"></i><span>Charts</span><div class="clearfix"></div></a></li>-->
+                                         <li id="menu-academico" style="cursor:pointer"><a  id="jhsd_sider" ><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><span>计划设定</span><div class="clearfix"></div></a></li>
+									     <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span>支付平台</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+										   <ul id="menu-academico-sub" >
+										       <li id="menu-academico-avaliacoes" ><a href="alipay.html">支付宝</a></li>
+											   <li id="menu-academico-avaliacoes" ><a href="wechat.html">微信钱包</a></li>
+											   <li id="menu-academico-avaliacoes" ><a href="other.html">其他</a></li>
+										  </ul>
+										</li>
+                                        
+									  <li id="menu-academico" ><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i><span>关于我们</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+										   <ul id="menu-academico-sub" >
+										   <li id="menu-academico-avaliacoes" ><a href="aboutus.html">团队信息</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="connectwithus.html">联系我们</a></li>
+										  </ul>
+										</li>
+								  </ul>
+								</div>
+							  </div>
+                              
+							  <div class="clearfix"></div>		
+							</div>
+<!--           菜单栏                                                                                                               -->
+							<script>
+							var toggle = true;
+										
+							$(".sidebar-icon").click(function() {                
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"}); 
+								}, 400);
+							  }
+											
+											toggle = !toggle;
+										});
+											   //屏幕滚动
+												$('#souye_sider').on('click',function(e){
+																	 $('html,body').animate({scrollTop:0}, 800);
+																			
+																		  });
+												$('#xffx_sider').on('click',function(e){
+																	$('html,body').animate({scrollTop:$("#xffx").offset().top}, 800);
+												
+																	  });
+																	  
+												$('#jhsd_sider').on('click',function(e){
+																	$('html,body').animate({scrollTop:$("#jhsd").offset().top}, 800);
+																	 });
+																	</script>
+<!--js -->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- /Bootstrap Core JavaScript -->	   
+<!-- morris JavaScript -->	
+<script src="js/raphael-min.js"></script>
+<script src="js/morris.js"></script>
+<!---all.js-->
+<script type="text/javascript" src="index.js"></script>
+</div>
+</body>
+</html>
