@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dd</title>
+  </head>
+  <body>
+    <form action="payBillAdd" method="post">
+        <h1>hola!{$user_id}</h1>
+        账单详情：</br>
+<?php
+print_r('<pre>');
+print_r($addBill);
+echo "<table  cellspacing='10'>";
+  echo "<tr><th>转账</th><th>餐饮</th><th>生活用品</th><th>交通</th><th>缴费</th><th>娱乐</th><th>教育</th><th>其他</th></tr>";
+echo "</table>";
+?>
+        添加账单：</br>
+            转账：<input type="text" name="zhuan_zhang" class="form-control" placeholder="请输入金额" />
+            餐饮：<input type="text" name="can_yin" class="form-control" placeholder="请输入金额" />
+            生活用品：<input type="text" name="sheng_huo_yong_pin" class="form-control" placeholder="请输入金额" />
+            交通：<input type="text" name="jiao_tong" class="form-control" placeholder="请输入金额" />
+            缴费：<input type="text" name="jiao_fei" class="form-control" placeholder="请输入金额" />
+            娱乐：<input type="text" name="yu_le" class="form-control" placeholder="请输入金额" />
+            教育：<input type="text" name="jiao_yu" class="form-control" placeholder="请输入金额" />
+            其他：<input type="text" name="qi_ta" class="form-control" placeholder="请输入金额" />
+
+            <button type="submit" >添加</button>
+
+
+    </form>
+  </body>
+</html>

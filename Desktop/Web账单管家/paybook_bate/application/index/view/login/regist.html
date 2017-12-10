@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PayBooker Register</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+  <div class="register-box-body">
+        <p class="login-box-msg">注册一个新用户</p>
+        <form action="__REGISET__" method="post">
+            <div >
+                <input type="text" name="user_id" class="form-control" placeholder="ID" />
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>
+            <div >
+                <input type="password" name="user_pwd" class="form-control" placeholder="密码" />
+                <span class="glyphicon glyphicon-credit-card form-control-feedback"></span>
+            </div>
+            <div >
+                <input type="password" name="repassword" class="form-control" placeholder="确认密码" />
+                <span class="glyphicon glyphicon-check form-control-feedback"></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                        <label>
+                            <input type="checkbox" name="agree" value="1"> 我同意 <a href="#">PayBook网站安全协议</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <button type="submit" >点击注册</button>
+                </div><!-- /.col -->
+            </div>
+        </form>
+        <a href="index" class="text-center">我已经注册了账户</a>
+    </div>
+</body>
+</html>
